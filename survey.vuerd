@@ -143,7 +143,7 @@
               "notNull": true
             },
             "ui": {
-              "active": false,
+              "active": true,
               "pk": true,
               "fk": false,
               "pfk": false,
@@ -313,7 +313,7 @@
               "notNull": true
             },
             "ui": {
-              "active": false,
+              "active": true,
               "pk": false,
               "fk": true,
               "pfk": false,
@@ -349,10 +349,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 587.5506,
-          "top": 231.2032,
-          "zIndex": 203,
+          "active": true,
+          "left": 581.3283,
+          "top": 308.5375,
+          "zIndex": 205,
           "widthName": 97.19580078125,
           "widthComment": 60
         },
@@ -437,8 +437,8 @@
           "columnIds": [
             "979a3f74-4058-4e88-84b8-9aa5c8588d2c"
           ],
-          "x": 587.5506,
-          "y": 296.45320000000004,
+          "x": 581.3283,
+          "y": 417.2875,
           "direction": "left"
         },
         "constraintName": "fk_identification_to_survey_result",
@@ -463,8 +463,8 @@
           "columnIds": [
             "da4d6419-7c3c-4563-a50b-5c3406c89a93"
           ],
-          "x": 587.5506,
-          "y": 252.9532,
+          "x": 581.3283,
+          "y": 330.2875,
           "direction": "left"
         },
         "constraintName": "fk_questionaries_to_survey_result",
@@ -489,8 +489,8 @@
           "columnIds": [
             "97fdf2f0-adab-4a1d-90db-b6a5588c78ac"
           ],
-          "x": 587.5506,
-          "y": 339.95320000000004,
+          "x": 581.3283,
+          "y": 373.7875,
           "direction": "left"
         },
         "constraintName": "fk_questionaries with answers _to_survey_result",

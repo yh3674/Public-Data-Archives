@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -234.40000000000003,
-    "scrollLeft": -211.2000000000001,
+    "scrollTop": -233.60000000000002,
+    "scrollLeft": -210.4000000000001,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -97,7 +97,7 @@
           "active": false,
           "left": 16,
           "top": 29.6,
-          "zIndex": 207,
+          "zIndex": 1,
           "widthName": 158.33642578125,
           "widthComment": 60
         },
@@ -274,7 +274,7 @@
           "active": false,
           "left": 4.8,
           "top": 289.6,
-          "zIndex": 312,
+          "zIndex": 8,
           "widthName": 152.48388671875,
           "widthComment": 115.71826171875
         },
@@ -359,7 +359,7 @@
           "active": false,
           "left": 469.6,
           "top": 128.8,
-          "zIndex": 234,
+          "zIndex": 2,
           "widthName": 70.30078125,
           "widthComment": 60
         },
@@ -444,7 +444,7 @@
           "active": false,
           "left": 470.4,
           "top": 272,
-          "zIndex": 235,
+          "zIndex": 3,
           "widthName": 70.30078125,
           "widthComment": 60
         },
@@ -476,10 +476,10 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "ccdccf43-1770-4fc8-81cb-a30334ad5c37"
+            "id": "2597650c-518c-49b4-852d-247ae883e2c9"
           },
           {
-            "name": "참여여부_CODE",
+            "name": "지역_CODE",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -487,19 +487,19 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
-              "fk": false,
+              "fk": true,
               "pfk": false,
-              "widthName": 93.70458984375,
+              "widthName": 67.70458984375,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "a666511e-4af5-4d2c-a3f9-56341e10b3e0"
+            "id": "c9330432-50e2-4471-a3f2-a88fe9a4c9ef"
           },
           {
             "name": "참여여부 STATEMENT",
@@ -523,13 +523,36 @@
               "widthDefault": 60
             },
             "id": "d71ace4e-d6af-420a-b409-c0f045774a05"
+          },
+          {
+            "name": "참여여부_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.70458984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a666511e-4af5-4d2c-a3f9-56341e10b3e0"
           }
         ],
         "ui": {
           "active": false,
           "left": 471.2,
-          "top": 478.7396,
-          "zIndex": 302,
+          "top": 444.7396,
+          "zIndex": 22,
           "widthName": 175.3544921875,
           "widthComment": 60
         },
@@ -608,13 +631,36 @@
               "widthDefault": 60
             },
             "id": "cde19b50-5b91-40f5-9b5a-46b4f4bc7ebc"
+          },
+          {
+            "name": "후원여부_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.70458984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8300d372-3d15-4f64-9ffe-30d0f71f80b4"
           }
         ],
         "ui": {
           "active": false,
-          "left": 473.2,
-          "top": 656.3396,
-          "zIndex": 318,
+          "left": 475.2,
+          "top": 660.3396,
+          "zIndex": 21,
           "widthName": 171.3173828125,
           "widthComment": 60
         },
@@ -720,32 +766,6 @@
         "start": {
           "tableId": "7deca11f-3517-42a6-9f89-f34846197216",
           "columnIds": [
-            "c4134c38-3e5d-49bd-b5c6-527af2d075df"
-          ],
-          "x": 372.50458984375,
-          "y": 369.2875,
-          "direction": "right"
-        },
-        "end": {
-          "tableId": "286ef1f6-0b83-44a9-a41e-04ad75a34d82",
-          "columnIds": [
-            "ccdccf43-1770-4fc8-81cb-a30334ad5c37"
-          ],
-          "x": 471.2,
-          "y": 543.9896,
-          "direction": "left"
-        },
-        "constraintName": "fk_business information_to_financial support states",
-        "visible": true,
-        "id": "12713d58-3a24-497a-a28f-9595a3302c03"
-      },
-      {
-        "identification": false,
-        "relationshipType": "ZeroN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "7deca11f-3517-42a6-9f89-f34846197216",
-          "columnIds": [
             "c4134c38-3e5d-49bd-b5c6-527af2d075df",
             "e7e63029-85ca-426a-bf6c-7ef93fee55bb"
           ],
@@ -759,13 +779,41 @@
             "a95447a2-d882-4a8b-8abb-449f99bf5cc8",
             "99941c90-bfc1-4a3e-8681-275fd9b11590"
           ],
-          "x": 473.2,
-          "y": 721.5896,
+          "x": 475.2,
+          "y": 735.8396,
           "direction": "left"
         },
         "constraintName": "fk_business information_to_monthly support status",
         "visible": true,
         "id": "3cb9a5bc-179b-4787-9dff-d1aa84a93e1a"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7deca11f-3517-42a6-9f89-f34846197216",
+          "columnIds": [
+            "c4134c38-3e5d-49bd-b5c6-527af2d075df",
+            "e7e63029-85ca-426a-bf6c-7ef93fee55bb"
+          ],
+          "x": 372.50458984375,
+          "y": 369.2875,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "286ef1f6-0b83-44a9-a41e-04ad75a34d82",
+          "columnIds": [
+            "2597650c-518c-49b4-852d-247ae883e2c9",
+            "c9330432-50e2-4471-a3f2-a88fe9a4c9ef"
+          ],
+          "x": 471.2,
+          "y": 520.2396,
+          "direction": "left"
+        },
+        "constraintName": "fk_business information_to_financial support status",
+        "visible": true,
+        "id": "6989ed4e-8a4e-496c-9006-4a49fa5ee36b"
       }
     ]
   }

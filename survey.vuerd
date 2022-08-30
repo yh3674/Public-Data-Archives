@@ -1,0 +1,502 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -101.59999999999987,
+    "scrollLeft": -94.39999999999993,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "IDENTIFICATION",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dcd911b7-70cb-4529-bff1-5a052d0c63ba"
+          },
+          {
+            "name": "PERSONAL_CUSTOMER_NAME",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 181.5244140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a95e32f0-9b62-4bd4-8a63-73e3b67dc497"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 9.7786,
+          "top": 45.6004,
+          "zIndex": 193,
+          "widthName": 98.1923828125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d4242509-f594-4b5c-959e-89c01e55eaf1"
+      },
+      {
+        "name": "QUESTIONARIES",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5f699d37-7496-4d05-b8a6-df5c9ccb8003"
+          },
+          {
+            "name": "QUESTION_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 105.1240234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1eb06919-b93e-43d2-9eb2-83116097cda4"
+          },
+          {
+            "name": "QUESTIONS",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.47802734375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "53d0ed42-644e-4b1c-a1a4-1d94f2fcba39"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 48,
+          "top": 265.8676,
+          "zIndex": 195,
+          "widthName": 99.1953125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8871a300-f632-49fc-b5a8-354549a87a9f"
+      },
+      {
+        "name": "QUESTIONARIES WITH ANSWERS ",
+        "comment": "",
+        "columns": [
+          {
+            "name": "QUESTION_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 105.1240234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "44a53f5c-f124-45c7-b77d-d8d120d16cde"
+          },
+          {
+            "name": "ANSWER_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.31396484375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4f5aa635-1938-421c-9aba-3f5590ec64d1"
+          },
+          {
+            "name": "ANSWER ",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "432e0958-d563-4d59-be24-3108d1804822"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 47.6464,
+          "top": 489.5994,
+          "zIndex": 204,
+          "widthName": 204.83935546875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8808ad9b-5511-4dbd-9b1d-8db154979565"
+      },
+      {
+        "name": "SURVEY_RESULT",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "979a3f74-4058-4e88-84b8-9aa5c8588d2c"
+          },
+          {
+            "name": "QUESTION_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 105.1240234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "da4d6419-7c3c-4563-a50b-5c3406c89a93"
+          },
+          {
+            "name": "ANSWER_CODE",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 94.31396484375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "97fdf2f0-adab-4a1d-90db-b6a5588c78ac"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 587.5506,
+          "top": 231.2032,
+          "zIndex": 203,
+          "widthName": 97.19580078125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2b303248-ff63-4398-a670-46754c339eb3"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d4242509-f594-4b5c-959e-89c01e55eaf1",
+          "columnIds": [
+            "dcd911b7-70cb-4529-bff1-5a052d0c63ba"
+          ],
+          "x": 244.04080703125,
+          "y": 155.6004,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "8871a300-f632-49fc-b5a8-354549a87a9f",
+          "columnIds": [
+            "5f699d37-7496-4d05-b8a6-df5c9ccb8003"
+          ],
+          "x": 244.06201171875,
+          "y": 265.8676,
+          "direction": "top"
+        },
+        "constraintName": "fk_identification_to_questionaries",
+        "visible": true,
+        "id": "f54b9f82-bd57-4c70-bb15-8203b79517a5"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8871a300-f632-49fc-b5a8-354549a87a9f",
+          "columnIds": [
+            "1eb06919-b93e-43d2-9eb2-83116097cda4"
+          ],
+          "x": 244.06201171875,
+          "y": 396.3676,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "8808ad9b-5511-4dbd-9b1d-8db154979565",
+          "columnIds": [
+            "44a53f5c-f124-45c7-b77d-d8d120d16cde"
+          ],
+          "x": 243.70841171875,
+          "y": 489.5994,
+          "direction": "top"
+        },
+        "constraintName": "fk_questionaries_to_questionaries with answers ",
+        "visible": true,
+        "id": "6bc93a1a-2bae-4e4e-b193-5c05b833a69d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d4242509-f594-4b5c-959e-89c01e55eaf1",
+          "columnIds": [
+            "dcd911b7-70cb-4529-bff1-5a052d0c63ba"
+          ],
+          "x": 478.3030140625,
+          "y": 100.60040000000001,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2b303248-ff63-4398-a670-46754c339eb3",
+          "columnIds": [
+            "979a3f74-4058-4e88-84b8-9aa5c8588d2c"
+          ],
+          "x": 587.5506,
+          "y": 296.45320000000004,
+          "direction": "left"
+        },
+        "constraintName": "fk_identification_to_survey_result",
+        "visible": true,
+        "id": "d5d613ce-651a-4786-92e2-96a212d85cd6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8871a300-f632-49fc-b5a8-354549a87a9f",
+          "columnIds": [
+            "1eb06919-b93e-43d2-9eb2-83116097cda4"
+          ],
+          "x": 440.1240234375,
+          "y": 331.1176,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2b303248-ff63-4398-a670-46754c339eb3",
+          "columnIds": [
+            "da4d6419-7c3c-4563-a50b-5c3406c89a93"
+          ],
+          "x": 587.5506,
+          "y": 252.9532,
+          "direction": "left"
+        },
+        "constraintName": "fk_questionaries_to_survey_result",
+        "visible": true,
+        "id": "012a0327-ec5b-4b02-aff8-a5b23a956e5b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8808ad9b-5511-4dbd-9b1d-8db154979565",
+          "columnIds": [
+            "4f5aa635-1938-421c-9aba-3f5590ec64d1"
+          ],
+          "x": 439.77042343749997,
+          "y": 554.8494000000001,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "2b303248-ff63-4398-a670-46754c339eb3",
+          "columnIds": [
+            "97fdf2f0-adab-4a1d-90db-b6a5588c78ac"
+          ],
+          "x": 587.5506,
+          "y": 339.95320000000004,
+          "direction": "left"
+        },
+        "constraintName": "fk_questionaries with answers _to_survey_result",
+        "visible": true,
+        "id": "78e346fb-0847-4255-8938-8c7078033d6b"
+      }
+    ]
+  }
+}

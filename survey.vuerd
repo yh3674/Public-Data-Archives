@@ -143,7 +143,7 @@
               "notNull": true
             },
             "ui": {
-              "active": true,
+              "active": false,
               "pk": true,
               "fk": false,
               "pfk": false,
@@ -313,7 +313,7 @@
               "notNull": true
             },
             "ui": {
-              "active": true,
+              "active": false,
               "pk": false,
               "fk": true,
               "pfk": false,
@@ -349,7 +349,7 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 581.3283,
           "top": 308.5375,
           "zIndex": 205,

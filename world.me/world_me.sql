@@ -1,18 +1,16 @@
 
 CREATE TABLE City_me
 (
-  ID         INT          NOT NULL COMMENT '아이디',
-  Code       VARCHAR(200) NOT NULL COMMENT '국가 코드',
-  Name       VARCHAR(200) NULL     COMMENT '이름',
-  District   VARCHAR(200) NULL     COMMENT '구역',
-  Population INT          NULL     COMMENT '인구',
-  PRIMARY KEY (ID)
+  CountryCode VARCHAR(200) NOT NULL COMMENT '국가',
+  ID          INT          NOT NULL COMMENT '아이디',
+  Name        VARCHAR(200) NULL     COMMENT '이름',
+  District    VARCHAR(200) NULL     COMMENT '구역',
+  Population  INT          NULL     COMMENT '인구'
 ) COMMENT '도시';
 
 CREATE TABLE Country_me
 (
-  Code           VARCHAR(200) NOT NULL COMMENT '국가 코드',
-  CountryCode    VARCHAR(200) NOT NULL COMMENT '국가',
+  Code           VARCHAR(200) NOT NULL COMMENT '국가',
   ID             INT          NOT NULL COMMENT '아이디',
   Name           VARCHAR(200) NULL     COMMENT '국가 이름',
   Region         VARCHAR(200) NULL     COMMENT '지역',
@@ -26,14 +24,12 @@ CREATE TABLE Country_me
   LocalName      VARCHAR(200) NULL     COMMENT '현지 국가 이름',
   GovernmentForm VARCHAR(200) NULL     COMMENT '정부형태',
   HeadOfState    VARCHAR(200) NULL     COMMENT '국가원수',
-  Capital        INT          NULL     COMMENT '수도',
-  PRIMARY KEY (Code)
+  Capital        INT          NULL     COMMENT '수도'
 ) COMMENT '나라';
 
 CREATE TABLE CountryLanguage_me
 (
   CountryCode VARCHAR(200) NOT NULL COMMENT '국가',
-  Code        VARCHAR(200) NOT NULL COMMENT '국가 코드',
   Language    varchar(200) NULL     COMMENT '언어',
   IsOfficial  ENUM         NULL     COMMENT '대표언어',
   Percentage  DECIMAL      NULL     COMMENT '문명률',
@@ -42,5 +38,10 @@ CREATE TABLE CountryLanguage_me
 
 ALTER TABLE Country_me
   ADD CONSTRAINT FK_CountryLanguage_me_TO_Country_me
+    FOREIGN KEY (Code)
+    REFERENCES CountryLanguage_me (CountryCode);
+
+ALTER TABLE City_me
+  ADD CONSTRAINT FK_CountryLanguage_me_TO_City_me
     FOREIGN KEY (CountryCode)
     REFERENCES CountryLanguage_me (CountryCode);

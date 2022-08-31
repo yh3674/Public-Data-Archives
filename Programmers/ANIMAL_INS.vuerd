@@ -1,0 +1,208 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -2.4000000000000004,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "ANIMAL_INS",
+        "comment": "동물의 정보",
+        "columns": [
+          {
+            "name": "ANIMAL_ID",
+            "comment": "",
+            "dataType": "VARCHAR(N)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.10107421875,
+              "widthComment": 60,
+              "widthDataType": 77.75927734375,
+              "widthDefault": 60
+            },
+            "id": "cb443b7a-5a56-4076-b235-19924702d886"
+          },
+          {
+            "name": "ANIMAL_TYPE",
+            "comment": "",
+            "dataType": "VARCHAR(N)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 84.86865234375,
+              "widthComment": 60,
+              "widthDataType": 77.75927734375,
+              "widthDefault": 60
+            },
+            "id": "d2dbdda1-308b-4af4-95d2-42ab6841ea0e"
+          },
+          {
+            "name": "DATETIME",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.42041015625,
+              "widthComment": 60,
+              "widthDataType": 61.42041015625,
+              "widthDefault": 60
+            },
+            "id": "17fadc1b-351c-46f8-a7f7-be4955444226"
+          },
+          {
+            "name": "INTAKE_CONDITION",
+            "comment": "",
+            "dataType": "VARCHAR(N)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 121.18359375,
+              "widthComment": 60,
+              "widthDataType": 77.75927734375,
+              "widthDefault": 60
+            },
+            "id": "1409c99e-4205-47cd-ba5d-ac7cd441e883"
+          },
+          {
+            "name": "NAME",
+            "comment": "",
+            "dataType": "VARCHAR(N)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 77.75927734375,
+              "widthDefault": 60
+            },
+            "id": "74608a79-7270-40c0-b3a8-9cbc60a0f96e"
+          },
+          {
+            "name": "SEX_UPON_INTAKE",
+            "comment": "",
+            "dataType": "VARCHAR(N)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 113.57275390625,
+              "widthComment": 60,
+              "widthDataType": 77.75927734375,
+              "widthDefault": 60
+            },
+            "id": "f6028356-4206-4732-88bd-13a8ed7d3001"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 52.8,
+          "top": 219.2,
+          "zIndex": 49,
+          "widthName": 76.78173828125,
+          "widthComment": 71.5703125
+        },
+        "visible": true,
+        "id": "2f73fea7-a754-4a54-8b2d-cf6451f336b5"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}

@@ -23,9 +23,9 @@
 
 SELECT CategoryID,
     (CASE WHEN PRICE < 30 THEN '저렴'             
-						  WHEN PRICE > 60 THEN '비쌈'
-                          WHEN PRICE BETWEEN 20 AND 60 THEN '적당'
-						  END) AS PriceComparison
+		WHEN PRICE > 60 THEN '비쌈'
+            WHEN PRICE BETWEEN 20 AND 60 THEN '적당'
+				END) AS PriceComparison
 FROM Products
 WHERE CategoryID IN (3,6)
 ORDER BY SupplierID DESC;

@@ -164,9 +164,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 41.155,
-          "top": 416.3556,
-          "zIndex": 46,
+          "left": 29.155,
+          "top": 325.3556,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 60
         },
@@ -524,10 +524,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 537.6847,
-          "top": 28.0885,
-          "zIndex": 47,
+          "active": true,
+          "left": 522.6847,
+          "top": 14.0885,
+          "zIndex": 9,
           "widthName": 73.04931640625,
           "widthComment": 60
         },
@@ -633,9 +633,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 41.5999,
-          "top": 3.9999,
-          "zIndex": 40,
+          "left": 28.5999,
+          "top": 11.9999,
+          "zIndex": 6,
           "widthName": 130.451171875,
           "widthComment": 71.5703125
         },
@@ -659,8 +659,8 @@
           "columnIds": [
             "95180227-a995-4435-a618-46decc218526"
           ],
-          "x": 437.83573984375,
-          "y": 79.4999,
+          "x": 424.83573984375,
+          "y": 87.4999,
           "direction": "right"
         },
         "end": {
@@ -668,8 +668,8 @@
           "columnIds": [
             "46c426b1-1894-4fd9-babe-be5de6a5c995"
           ],
-          "x": 537.6847,
-          "y": 216.3385,
+          "x": 522.6847,
+          "y": 202.3385,
           "direction": "left"
         },
         "constraintName": "fk_countrylanguage_me_to_country_me",
@@ -685,8 +685,8 @@
           "columnIds": [
             "95180227-a995-4435-a618-46decc218526"
           ],
-          "x": 239.717819921875,
-          "y": 154.9999,
+          "x": 226.717819921875,
+          "y": 162.9999,
           "direction": "bottom"
         },
         "end": {
@@ -694,8 +694,8 @@
           "columnIds": [
             "1f3f50d3-823d-4bd0-8292-573e1a546874"
           ],
-          "x": 239.272919921875,
-          "y": 416.3556,
+          "x": 227.272919921875,
+          "y": 325.3556,
           "direction": "top"
         },
         "constraintName": "fk_countrylanguage_me_to_city_me",

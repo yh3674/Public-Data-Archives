@@ -6,6 +6,7 @@
  --                                   11	    100
 
  -- [Corrected Approach]
+
 SELECT HOUR(DATETIME) as Hour, COUNT(DATETIME)
 FROM ANIMAL_OUTS
 WHERE Hour(DATETIME) BETWEEN 9 AND 19

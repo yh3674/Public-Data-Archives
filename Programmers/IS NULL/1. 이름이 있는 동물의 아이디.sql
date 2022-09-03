@@ -1,0 +1,14 @@
+-- 동물 보호소에 들어온 동물 중, 이름이 없는 채로 들어온 동물의 ID를 조회하는 SQL 문을 작성
+
+-- [Attempted Approach]
+
+SELECT ANIMAL_ID FROM ANIMAL_INS
+WHERE ANIMAL_ID IS NULL
+ORDER BY ANIMAL_ID ASC;
+
+-- [Corrected Approach]
+
+SELECT ANIMAL_ID 
+FROM ANIMAL_INS 
+WHERE NAME IS NULL -- ANIMAL_ID x, MAME이 NULL
+ORDER BY ANIMAL_ID ASC;

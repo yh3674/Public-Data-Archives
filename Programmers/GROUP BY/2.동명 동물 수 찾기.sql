@@ -13,7 +13,7 @@
 
 -- [Corrected Approach with Reference] [Alias]
 
-SELECT NAME, CTable.COUNT
+SELECT NAME CTable.COUNT
     FROM(
         SELECT NAME, COUNT(ANIMAL_ID) AS COUNT
         FROM ANIMAL_INS
@@ -22,3 +22,16 @@ SELECT NAME, CTable.COUNT
         ) CTable
     WHERE CTable.COUNT >=2
 ORDER BY NAME;
+
+
+-- [OWN Version] --------------------------------------------
+SELECT Ctable.COUNT
+    FROM(
+        SELECT NAME, COUNT(ANIMAL_ID) AS ID Count
+        FROM ANIMAL_INS
+        WHERE NAME IS NOT NULL
+        GROUP BY NAME
+        ) Ctable
+    WHERE Ctable.count >=2
+ORDER BY NAME
+;
